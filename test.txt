@@ -4,17 +4,11 @@ Hello Git
 this is 3:20 am
 
 
-ntesdoor2?lightweight%3D1%26verifycookie%3D1%26language%3D-1%26style%3D1"
+
 #打开网易登录页面
-login_page = browser.get(url)
+
 #输入账户密码然后提交
-login_form = login_page.soup.select("#fLogin")[0]
-login_form.select("#username")[0]['value'] = 'earayu@163.com'
-login_form.select("#password")[0]['value'] = 'Muse++99'
-page2 = browser.submit(login_form, login_page.url)
+
 #获取page2内容
-page2_soup = bs4.BeautifulSoup(page2.content)
+
 #用page2的cookies登录网易邮箱
-cookie = page2.cookies.get_dict()
-page3 = browser.get('http://entry.mail.163.com/coremail/fcg/ntesdoor2')
-# page3 = page3.prepare()
