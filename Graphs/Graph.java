@@ -58,8 +58,9 @@ public class Graph {
 		Iterable<Integer> iterable = g.adj(0);
 		Iterator<Integer> it = iterable.iterator();
 		while(it.hasNext()){
-			System.out.println(it.next());
+			System.out.print(it.next() + " ");
 		}
 	}
+	//result: 5 1 2 6 
 
 }
