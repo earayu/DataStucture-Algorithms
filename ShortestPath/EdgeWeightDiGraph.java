@@ -1,6 +1,5 @@
 package ShortestPath;
 
-import MST.Edge;
 import list.MyArrayList;
 
 public class EdgeWeightDiGraph {
